@@ -12,8 +12,6 @@ possibleMoves = [[1, 1], [1, 2], [1, 3], [2, 1],
                  [2, 2], [2, 3], [3, 1], [3, 2], [3, 3]]
 
 # Function to print the board without " " being present
-
-
 def print_board(board):
     for row in board:
         print(" ".join(row))
@@ -38,8 +36,6 @@ def winner(board, letter):
              letter and board[3][1] == letter)  # top right diagonal
             )
 # Function to define a valid move
-
-
 def valid_move(move):
     if move == "[X]" or move == "[O]":
         return False
